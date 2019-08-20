@@ -3,21 +3,6 @@ import { render, fireEvent } from '@testing-library/react';
 
 import Controls from './Controls';
 
-const testConfigs = [
-  {
-    locked: false,
-    closed: false,
-  },
-  {
-    locked: false,
-    closed: true,
-  },
-  {
-    locked: true,
-    closed: true,
-  },
-];
-
 const mocks = {
   toggleLocked: jest.fn(),
   toggleClosed: jest.fn(),
